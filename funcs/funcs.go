@@ -4,10 +4,6 @@ import (
 	"regexp"
 )
 
-func GetHello() string {
-	return "Hello"
-}
-
 func makeLink(bracketTitle []byte) []byte {
 	title := string(bracketTitle[1 : len(bracketTitle)-1])
 	str := "<a href=\"/view/" + title + "\">" + title + "</a>"
